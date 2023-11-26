@@ -92,10 +92,10 @@ function Home() {
         id="Services"
       >
         <div className="intro-box flex flex-col-reverse min-[990px]:flex-row gap-[4rem]">
-          <div className="services-container w-full min-[990px]:w-[50%] child:h-[165px] child:my-4 child:bg-lightergray child:p-8">
+          <div className="services-container w-full min-[990px]:min-w-[50%] child:h-[165px] child:my-4 child:bg-lightergray child:p-8">
             <div className="service-card">
               <div className="service-card-content">
-                <h2 className="text-[1.5rem] font-semibold">Front-End</h2>
+                <h2 className="text-[1.5rem] font-semibold mb-4">Front-End</h2>
                 <p className="text-gray-500">
                   I develop frontend with effecient code structure.
                 </p>
@@ -103,7 +103,7 @@ function Home() {
             </div>
             <div className="service-card">
               <div className="service-card-content">
-                <h2 className="text-[1.5rem] font-semibold">Back-End</h2>
+                <h2 className="text-[1.5rem] font-semibold mb-4">Back-End</h2>
                 <p className="text-gray-500">
                   Turn ideas into robust, scalable, and high-performance digital
                   solutions.
@@ -112,7 +112,7 @@ function Home() {
             </div>
             <div className="service-card">
               <div className="service-card-content">
-                <h2 className="text-[1.5rem] font-semibold">Full-stack</h2>
+                <h2 className="text-[1.5rem] font-semibold mb-4">Full-stack</h2>
                 <p className="text-gray-500">
                   I develop full stack web application using MERN.
                 </p>
@@ -241,7 +241,7 @@ function Home() {
         className="contact-section py-[6rem] px-[15%] bg-lightgray font-roboto relative"
         id="Contact"
       >
-        <div className="connect-box w-[40vw] flex flex-col gap-4">
+        <div className="connect-box w-[40vw] max-[770px]:w-[70vw] flex flex-col gap-4">
           <h1 className="text-pred text-[4rem] font-semibold">
             Connect with me
           </h1>
@@ -291,8 +291,8 @@ function Home() {
         </div>
         <div className="line absolute w-[2px] bg-gray-400 top-[30%] right-[20%] h-[250px] max-[770px]:hidden">
           <div className="circle1 w-8 h-8 border-2 border-pred bg-lightgray rounded-full absolute top-0 right-[-14.8px] z-2"></div>
-          <div className="circle2 w-8 h-8 border-2 border-pred bg-pred rounded-full absolute top-[43%] right-[-14.8px]"></div>
-          <div className="circle3 w-8 h-8 border-2 border-pred bg-lightgray rounded-full absolute bottom-0 right-[-14.8px]"></div>
+          <div className="circle2 w-8 h-8 border-2 border-pred bg-lightgray  rounded-full absolute top-[43%] right-[-14.8px]"></div>
+          <div className="circle3 w-8 h-8 border-2 border-pred  bg-pred rounded-full absolute bottom-0 right-[-14.8px]"></div>
         </div>
       </div>
       <div className="copyright bg-black h-[3rem] flex justify-center items-center">
