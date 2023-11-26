@@ -10,6 +10,7 @@ function Navbar() {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <header className="md:h-[5rem] bg-darkgray text-white flex flex-col md:block relative z-[100]">
       <nav className="flex flex-row justify-between items-center text-[1.2rem] w-[92%] m-auto">
