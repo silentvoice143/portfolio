@@ -13,6 +13,7 @@ import {} from "react-icons/fa6";
 import { MdOutlineManageAccounts } from "react-icons/md";
 import { RiSpeakFill } from "react-icons/ri";
 import adduser from "../email";
+import resume from "../resume.pdf";
 
 function Home() {
   const [email, setEmail] = useState("");
@@ -66,7 +67,7 @@ function Home() {
           <button className="">
             <a
               className="resume py-1 px-4 flex justify-center items-center bg-white text-black rounded-md gap-2"
-              href={""}
+              href={resume}
               download
             >
               <p>Resume</p>
