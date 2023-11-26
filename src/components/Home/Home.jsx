@@ -92,7 +92,7 @@ function Home() {
         id="Services"
       >
         <div className="intro-box flex flex-col-reverse min-[990px]:flex-row gap-[4rem]">
-          <div className="services-container w-full min-[990px]:min-w-[50%] child:h-[165px] child:my-4 child:bg-lightergray child:p-8">
+          <div className="services-container w-full min-[990px]:w-[50%] child:min-h-[165px] child:my-4 child:bg-lightergray child:p-8">
             <div className="service-card">
               <div className="service-card-content">
                 <h2 className="text-[1.5rem] font-semibold mb-4">Front-End</h2>
