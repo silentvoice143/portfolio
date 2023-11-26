@@ -1,0 +1,14 @@
+.list-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff4a57;
+  transition: 1s;
+}
+
+.list-item:hover::after {
+  width: 100%;
+}
