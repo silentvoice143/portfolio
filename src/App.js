@@ -11,19 +11,19 @@ import Service from "./components/Services/Service";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <div className="App">
         <div>
           <Navbar />
         </div>
         <Routes>
-          <Route path="/" Component={Home} />
+          <Route exact path="/" Component={Home} />
 
-          <Route exact path="/about" Component={About} />
-          <Route exact path="/work" Component={Work} />
-          <Route exact path="/skills" Component={Skill} />
-          <Route exact path="/contact" Component={Contact} />
-          <Route exact path="/service" Component={Service} />
+          <Route path="/about" Component={About} />
+          <Route path="/work" Component={Work} />
+          <Route path="/skills" Component={Skill} />
+          <Route path="/contact" Component={Contact} />
+          <Route path="/service" Component={Service} />
         </Routes>
       </div>
     </BrowserRouter>
