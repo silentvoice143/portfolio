@@ -21,7 +21,7 @@ function Navbar() {
           </div>
         </Link>
         <ul className="hidden nav-list md:flex md:gap-4 max-[882px]:text-[1rem] lg:gap-8 child:relative child:hover:cursor-pointer">
-          <Link to="/" className="p-2">
+          <Link to="/portfolio" className="p-2">
             <li className="list-item">Home</li>
           </Link>
           <Link to="/service" className="p-2">
@@ -62,7 +62,7 @@ function Navbar() {
         className={isOpen ? "px-8 block duration-200 ease-linear" : "hidden"}
       >
         <ul className="w-full flex flex-col nav-list md:hidden md:gap-4 lg:gap-8 child:relative">
-          <Link to="/" className="p-2 pl-0">
+          <Link to="/portfolio" className="p-2 pl-0">
             <li className="border-b-2 border-lightergray">Home</li>
           </Link>
           <Link to="/service" className="p-2 pl-0">
