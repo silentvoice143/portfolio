@@ -9,7 +9,6 @@ async function adduser(name, email, message) {
   const template2 = process.env.REACT_APP_TEMPLATE_ID2;
   const public_api = process.env.REACT_APP_PUBLIC_API;
 
-  console.log(service_id);
   const templateParams1 = {
     from_name: "Satyam Kumar",
     reply_to: "silentvoice4143@gmail.com",
@@ -39,7 +38,7 @@ async function adduser(name, email, message) {
       message: message,
     });
 
-    console.log("Document written with ID: ", docRef.id);
+    console.log("Data saved in firebase");
   } catch (e) {
     console.error("Error adding document: ", e);
   }
