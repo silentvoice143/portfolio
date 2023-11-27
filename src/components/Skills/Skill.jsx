@@ -138,15 +138,17 @@ function Skill() {
       <div className="cooding-platforms skill-container py-[6rem] px-[15%] bg-darkgray font-roboto relative text-white">
         <h1 className="text-pred text-[4rem] font-semibold">Coding Profiles</h1>
         <div>
-          <div className="leetcode">
-            <h1 className="text-[2rem] font-semibold my-8 underline">
-              Leetcode
-            </h1>
+          <div className="leetcode mb-[5rem]">
+            <a href="https://leetcode.com/silent_voice143/">
+              <h1 className="text-[2rem] font-semibold my-8 underline">
+                Leetcode
+              </h1>
+            </a>
             <div className="code-content-box">
-              <div className="profile-img h-400px rounded-lg overflow-hidden">
+              <div className="relative profile-img h-[400px] max-[700px]:h-[200px] rounded-lg overflow-hidden">
                 <img
                   name="leetcode"
-                  className="cursor-pointer"
+                  className="cursor-pointer absolute w-full h-full"
                   src={leetcode}
                   alt=""
                   srcset=""
@@ -156,14 +158,16 @@ function Skill() {
             </div>
           </div>
           <div className="codingninjs">
-            <h1 className="text-[2rem] font-semibold my-8 underline">
-              Coding Ninjas
-            </h1>
+            <a href="https://www.codingninjas.com/studio/profile/b98b17bb-c9e8-4c90-b732-437e9c265b2f">
+              <h1 className="text-[2rem] font-semibold my-8 underline">
+                Coding Ninjas
+              </h1>
+            </a>
             <div className="code-content-box">
-              <div className="profile-img h-400px rounded-lg overflow-hidden">
+              <div className="relative profile-img h-[400px] max-[700px]:h-[200px] rounded-lg overflow-hidden">
                 <img
                   name="codingninja"
-                  className="cursor-pointer"
+                  className="cursor-pointer absolute w-full h-full"
                   src={codingninja}
                   alt=""
                   srcset=""
