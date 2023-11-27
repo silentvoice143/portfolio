@@ -27,6 +27,11 @@ function Contact() {
   }
   return (
     <div className="contact-container text-white">
+      <div className="contact-intro py-[6rem] px-[15%] bg-lightgray font-roboto relative text-[10vw]  max-[770px]:child:text-[14vw]  font-bold text-gray-500">
+        <h1>Connect</h1>
+        <h1>Collaborate</h1>
+        <h1>Cheer Up</h1>
+      </div>
       <div
         className="contact-section py-[6rem] px-[15%] bg-lightgray font-roboto relative"
         id="Contact"

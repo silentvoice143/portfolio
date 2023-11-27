@@ -86,7 +86,7 @@ function Work() {
           <div className="circle3 w-8 h-8 border-2 border-pred  bg-pred rounded-full absolute bottom-0 right-[-14.8px]"></div>
         </div>
       </div>
-      <div className="copyright bg-black h-[3rem] flex justify-center items-center">
+      <div className="copyright bg-black h-[3rem] flex justify-center items-center text-white">
         <p>&copy; Satyam | Developer | Programming Hunter 2023</p>
       </div>
     </div>
