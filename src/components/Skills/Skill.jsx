@@ -145,10 +145,10 @@ function Skill() {
               </h1>
             </a>
             <div className="code-content-box">
-              <div className="relative profile-img h-[400px] max-[700px]:h-[200px] rounded-lg overflow-hidden">
+              <div className="profile-img rounded-lg overflow-hidden">
                 <img
                   name="leetcode"
-                  className="cursor-pointer absolute w-full h-full"
+                  className="cursor-pointer"
                   src={leetcode}
                   alt=""
                   srcset=""
@@ -164,10 +164,10 @@ function Skill() {
               </h1>
             </a>
             <div className="code-content-box">
-              <div className="relative profile-img h-[400px] max-[700px]:h-[200px] rounded-lg overflow-hidden">
+              <div className="profile-img rounded-lg overflow-hidden">
                 <img
                   name="codingninja"
-                  className="cursor-pointer absolute w-full h-full"
+                  className="cursor-pointer"
                   src={codingninja}
                   alt=""
                   srcset=""
