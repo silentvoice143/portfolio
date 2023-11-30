@@ -54,7 +54,7 @@ function Navbar() {
           </div>
           <div className="nav-icons hidden md:inline-block border-2 px-4 py-2 rounded-full hover:border-pred max-[882px]:border-0 max-[882px]:px-2">
             <Link
-              to="https://github.com/silentvoice143"
+              to="https://www.linkedin.com/in/satyam-kumar-550b4025a/"
               target="_blank"
               className="flex gap-1 items-center"
             >
@@ -107,7 +107,7 @@ function Navbar() {
           </div>
           <div className="nav-icons inline-block  px-4 py-2 rounded-full border-[2px] border-white">
             <Link
-              to="https://github.com/silentvoice143"
+              to="https://www.linkedin.com/in/satyam-kumar-550b4025a/"
               target="_blank"
               className="flex gap-1 items-center"
             >
