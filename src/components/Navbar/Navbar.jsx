@@ -3,6 +3,7 @@ import "./navbar.css";
 import { FaGithub } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -41,16 +42,27 @@ function Navbar() {
             <li className="list-item">Contact</li>
           </Link>
         </ul>
-        <div className="nav-icons hidden md:inline-block border-2 px-4 py-2 rounded-full hover:border-pred">
-          <Link
-            to="https://github.com/silentvoice143"
-            target="_blank"
-            className="flex gap-1 items-center"
-          >
-            <FaGithub />
-            <p className="text-[0.7rem] max-[882px]:hidden">GitHub</p>
-          </Link>
+        <div>
+          <div className="nav-icons hidden md:inline-block border-2  px-4 py-2 rounded-full hover:border-pred  max-[882px]:border-0 mr-4 max-[882px]:mr-0 max-[882px]:px-2">
+            <Link
+              to="https://github.com/silentvoice143"
+              target="_blank"
+              className="flex gap-1 items-center"
+            >
+              <FaGithub />
+            </Link>
+          </div>
+          <div className="nav-icons hidden md:inline-block border-2 px-4 py-2 rounded-full hover:border-pred max-[882px]:border-0 max-[882px]:px-2">
+            <Link
+              to="https://github.com/silentvoice143"
+              target="_blank"
+              className="flex gap-1 items-center"
+            >
+              <FaLinkedin />
+            </Link>
+          </div>
         </div>
+
         <button className="md:hidden" onClick={toggle}>
           {isOpen ? (
             <IoMdClose className="md:hidden text-[2rem]" />
