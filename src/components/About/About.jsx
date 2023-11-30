@@ -58,6 +58,39 @@ function About() {
         </p>
       </div>
 
+      <div className="education py-[6rem] px-[15%] bg-lightgray font-roboto relative text-white">
+        <h3 className="text-[0.9rem] text-gray-500">Education</h3>
+        <h1 className="text-[3rem] my-8 mb-[5rem]">Education</h1>
+        <div className="pl-12">
+          <div className="edu-content mb-12">
+            <h1 className="text-sm text-pred">MATRICULATION /></h1>
+            <h1 className="text-2xl font-mono font-semibold text-gray-500 mt-4">
+              Jack And Jill School <br />
+              Singhani Korrah Hazaribagh
+            </h1>
+            <p className="text-sm mb-4">2018</p>
+          </div>
+          <div className="edu-content mb-12">
+            <h1 className="text-sm text-pred">INTERMEDIATE /></h1>
+            <h1 className="text-2xl font-mono font-semibold text-gray-500 mt-4">
+              Inter Science College <br />
+              Hazaribagh
+            </h1>
+            <p className="text-sm mb-4">2018-2020</p>
+          </div>
+          <div className="edu-content">
+            <h1 className="text-sm text-pred">
+              Bachelor of Computer Application />
+            </h1>
+            <h1 className="text-2xl font-mono font-semibold text-gray-500 mt-4">
+              Annada College <br />
+              Hazaribagh
+            </h1>
+            <p className="text-sm mb-4">2021-2024</p>
+          </div>
+        </div>
+      </div>
+
       <div className="experience intro py-[6rem] px-[15%] bg-lightgray font-roboto relative text-white">
         <h3 className="text-[0.9rem] text-gray-500">Experience</h3>
         <h1 className="text-[3rem] my-8 mb-[5rem]">
@@ -82,47 +115,86 @@ function About() {
               <h1 className="text-[1.2rem] text-pred font-bold">
                 Worked On Projects:
               </h1>
-              <h1 className="font-semibold text-[1.6rem] mt-4">BlogSpot</h1>
-              <ul className="text-gray-500 list-disc child:my-8">
-                <li>
-                  <span className=" text-white font-semibold">
-                    Description:{" "}
-                  </span>
-                  <p>
-                    A blog web application based on content management
-                    system.Let user to post an image with some paragraph and
-                    comment on a post.User can login to their account and they
-                    can edit their post.
-                  </p>
-                </li>
-                <li>
-                  <span className=" text-white font-semibold">
-                    Technology learned:{" "}
-                  </span>
-                  <ul className="list-inside list-decimal child:mb-2">
-                    <li>ReactJS : Frontend development</li>
-                    <li>Node.js : Backend development</li>
-                    <li>MongoDB : Database</li>
-                    <li>
-                      Multer npm package for uploading images on database.
-                    </li>
-                    <li>JWT token for user authentication</li>
-                    <li>ReactHooks for state management.</li>
-                  </ul>
-                </li>
-              </ul>
-              <Link
-                to="https://github.com/silentvoice143/BlogSpot"
-                target="_blank"
-                className=" px-4 py-2 border-2 border-gray-500 rounded-full inline-flex gap-2 text-gray-500 hover:border-white hover:text-white items-center"
-              >
-                <p>Blogspot repo</p>
-                <FaExternalLinkAlt />
-              </Link>
+              <div>
+                <h1 className="font-semibold text-[1.6rem] mt-4">BlogSpot</h1>
+                <ul className="text-gray-500 list-disc child:my-8">
+                  <li>
+                    <span className=" text-white font-semibold">
+                      Description:{" "}
+                    </span>
+                    <p>
+                      A blog web application based on content management
+                      system.Let user to post an image with some paragraph and
+                      comment on a post.User can login to their account and they
+                      can edit their post.
+                    </p>
+                  </li>
+                  <li>
+                    <span className=" text-white font-semibold">
+                      Technology learned:{" "}
+                    </span>
+                    <ul className="list-inside list-decimal child:mb-2">
+                      <li>ReactJS : Frontend development</li>
+                      <li>Node.js : Backend development</li>
+                      <li>MongoDB : Database</li>
+                      <li>
+                        Multer npm package for uploading images on database.
+                      </li>
+                      <li>JWT token for user authentication</li>
+                      <li>ReactHooks for state management.</li>
+                    </ul>
+                  </li>
+                </ul>
+                <Link
+                  to="https://github.com/silentvoice143/BlogSpot"
+                  target="_blank"
+                  className=" px-4 py-2 border-2 border-gray-500 rounded-full inline-flex gap-2 text-gray-500 hover:border-white hover:text-white items-center"
+                >
+                  <p>Blogspot repo</p>
+                  <FaExternalLinkAlt />
+                </Link>
+              </div>
+              <div>
+                <h1 className="font-semibold text-[1.6rem] mt-[3rem]">
+                  Chatapp
+                </h1>
+                <ul className="text-gray-500 list-disc child:my-8">
+                  <li>
+                    <span className=" text-white font-semibold">
+                      Description:{" "}
+                    </span>
+                    <p>
+                      A Simple chat app using Node.js, where group of people can
+                      connect and send or receive text messages at a particular
+                      time.Also they can assign task to any person in a group.
+                    </p>
+                  </li>
+                  <li>
+                    <span className=" text-white font-semibold">
+                      Technology learned:{" "}
+                    </span>
+                    <ul className="list-inside list-decimal child:mb-2">
+                      <li>Node.js : Backend development</li>
+                      <li>MongoDB : Database for task collection</li>
+                      <li>Socket.io for connecting people in realtime</li>
+
+                      <li>ReactHooks for state management.</li>
+                    </ul>
+                  </li>
+                </ul>
+                <Link
+                  to="https://github.com/silentvoice143/chatapp"
+                  target="_blank"
+                  className=" px-4 py-2 border-2 border-gray-500 rounded-full inline-flex gap-2 text-gray-500 hover:border-white hover:text-white items-center"
+                >
+                  <p>Blogspot repo</p>
+                  <FaExternalLinkAlt />
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="baoiamintern">
-            <div className="flex gap-4">
+          <div className="baoiamintern ">
+            <div className="flex gap-4 mb-8">
               <img
                 className="w-12 h-12 rounded-lg"
                 src={baoiamlogo}
@@ -132,6 +204,64 @@ function About() {
               <h1 className="font-semibold mt-auto text-[1.6rem] underline text-gray-500">
                 Baoiam Pvt Limited
               </h1>
+            </div>
+            <div className="pl-20">
+              <h1 className="text-[1.2rem] text-pred font-bold">Role:</h1>
+              <p className="font-bold text-sm mb-12">Full Stack Developer</p>
+              <h1 className="text-[1.2rem] text-pred font-bold">
+                Worked On Projects:
+              </h1>
+              <div>
+                <h1 className="font-semibold text-[1.6rem] mt-4">
+                  BAoiam Pvt Limited official site
+                </h1>
+                <ul className="text-gray-500 list-disc child:my-8">
+                  <li>
+                    <span className=" text-white font-semibold">
+                      Description:{" "}
+                    </span>
+                    <p>An e-learning platform for students to learn.</p>
+                  </li>
+                  <li>
+                    <span className=" text-white font-semibold">
+                      Technology learned:{" "}
+                    </span>
+                    <ul className="list-inside list-decimal child:mb-2">
+                      <li>Worked on responsiveness in Frontend.</li>
+                      <li>Content update.</li>
+                      <li>Make carosel designs.</li>
+                      <li>Html, Css, Vanilla js used in the whole project.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h1 className="font-semibold text-[1.6rem] mt-4">Divueens</h1>
+                <ul className="text-gray-500 list-disc child:my-8">
+                  <li>
+                    <span className=" text-white font-semibold">
+                      Description:{" "}
+                    </span>
+                    <p>A cosmetic product e-commerce site.</p>
+                  </li>
+                  <li>
+                    <span className=" text-white font-semibold">
+                      Technology learned:{" "}
+                    </span>
+                    <ul className="list-inside list-decimal child:mb-2">
+                      <li>Develop homepage of the webiste.</li>
+                      <li>Make carosel designs.</li>
+                      <li>
+                        Tailwind Css: For designing I used tailwind in it using
+                        node configuration.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              {/* baoiam end  */}
             </div>
           </div>
         </div>
