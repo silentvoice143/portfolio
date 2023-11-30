@@ -95,15 +95,25 @@ function Navbar() {
           </Link>
         </ul>
         <br />
-        <div className="nav-icons px-4 py-2 border-2 border-white inline-block rounded-full md:hidden mb-8 mt-4">
-          <Link
-            to="https://github.com/silentvoice143"
-            target="_blank"
-            className="flex gap-1 items-center"
-          >
-            <FaGithub />
-            <p className="text-[0.7rem]">GitHub</p>
-          </Link>
+        <div className="md:hidden mb-8 mt-4">
+          <div className="nav-icons px-4 py-2 inline-block rounded-full border-[2px] border-white mr-4">
+            <Link
+              to="https://github.com/silentvoice143"
+              target="_blank"
+              className="flex gap-1 items-center"
+            >
+              <FaGithub className="w-6 h-6" />
+            </Link>
+          </div>
+          <div className="nav-icons inline-block  px-4 py-2 rounded-full border-[2px] border-white">
+            <Link
+              to="https://github.com/silentvoice143"
+              target="_blank"
+              className="flex gap-1 items-center"
+            >
+              <FaLinkedin className="w-6 h-6" />
+            </Link>
+          </div>
         </div>
       </div>
     </header>
