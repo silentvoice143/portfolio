@@ -60,7 +60,7 @@ function Skill() {
             <span className="underline">Skill</span>-Set
           </h2>
           <div className="skill-box grid grid-cols-2  child:bg-lightergray child:p-6 child:w-[200px] child:h-[200px] gap-[3rem] min-[990px]:grid-cols-3 max-[770px]:pr-0 max-[600px]:grid-cols-1 child:m-auto">
-            <div className="skill-item">
+            <div className="skill-item hover:scale-[1.1]">
               <BsGlobe2 className="text-[2.5rem] text-pred mb-2" />
               <p className="font-bold mb-2">Front-End</p>
               <ul className="text-[0.9rem] text-gray-500 list-disc">
@@ -69,7 +69,7 @@ function Skill() {
                 <li>Tailwind Css, Bootstrap</li>
               </ul>
             </div>
-            <div className="skill-item">
+            <div className="skill-item hover:scale-[1.1]">
               <FaNodeJs className="text-[2.5rem] text-pred mb-2" />
               <p className="font-bold mb-2">Back-End</p>
               <ul className="text-[0.9rem] text-gray-500 list-disc">
@@ -77,14 +77,14 @@ function Skill() {
                 <li>Express</li>
               </ul>
             </div>
-            <div className="skill-item">
+            <div className="skill-item hover:scale-[1.1]">
               <FaGithub className="text-[2.5rem] text-pred mb-2" />
               <p className="font-bold mb-2">Git Version Control</p>
               <ul className="text-[0.9rem] text-gray-500 list-disc">
                 <li>version control using cmd and VS Code</li>
               </ul>
             </div>
-            <div className="skill-item">
+            <div className="skill-item hover:scale-[1.1]">
               <BsDatabaseFillCheck className="text-[2.5rem] text-pred mb-2" />
               <p className="font-bold mb-2">Database</p>
               <ul className="text-[0.9rem] text-gray-500 list-disc">
@@ -92,7 +92,7 @@ function Skill() {
                 <li>SQL</li>
               </ul>
             </div>
-            <div className="skill-item">
+            <div className="skill-item hover:scale-[1.1]">
               <FaFileCode className="text-[2.5rem] text-pred mb-2" />
               <p className="font-bold mb-2">Programming Languages</p>
               <ul className="text-[0.9rem] text-gray-500 list-disc">
@@ -100,7 +100,7 @@ function Skill() {
                 <li>Java, Python(basic)</li>
               </ul>
             </div>
-            <div className="skill-item">
+            <div className="skill-item hover:scale-[1.1]">
               <FaSitemap className="text-[2.5rem] text-pred mb-2" />
               <p className="font-bold mb-2">DSA</p>
               <ul className="text-[0.9rem] text-gray-500 list-disc">
@@ -108,7 +108,7 @@ function Skill() {
                 <li>Greedy, Dynamic and BITs etc</li>
               </ul>
             </div>
-            <div className="skill-item">
+            <div className="skill-item hover:scale-[1.1]">
               <FaPerson className="text-[2.5rem] text-pred mb-2" />
               <p className="font-bold mb-2">Leadership</p>
               <ul className="text-[0.9rem] text-gray-500 list-disc">
@@ -116,7 +116,7 @@ function Skill() {
                 <li>Valuable Experience</li>
               </ul>
             </div>
-            <div className="skill-item">
+            <div className="skill-item hover:scale-[1.1]">
               <MdOutlineManageAccounts className="text-[2.5rem] text-pred mb-2" />
               <p className="font-bold mb-2">Project Management</p>
               <ul className="text-[0.9rem] text-gray-500 list-disc">
@@ -124,7 +124,7 @@ function Skill() {
                 <li>Completed Frontend</li>
               </ul>
             </div>
-            <div className="skill-item">
+            <div className="skill-item hover:scale-[1.1]">
               <RiSpeakFill className="text-[2.5rem] text-pred mb-2" />
               <p className="font-bold mb-2">Communication</p>
               <ul className="text-[0.9rem] text-gray-500 list-disc">

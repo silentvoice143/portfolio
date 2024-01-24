@@ -14,6 +14,8 @@ import { MdOutlineManageAccounts } from "react-icons/md";
 import { RiSpeakFill } from "react-icons/ri";
 import adduser from "../email";
 import tastehood from "./workimg/main.png";
+import spotify from "./workimg/spotifyy.jpg";
+import chatapp from "./workimg/chatapp.jpg";
 
 import WorkCard from "./WorkCard";
 
@@ -33,10 +35,10 @@ function Work() {
       <div className="work-container py-[6rem] px-[15%] bg-lightgray font-roboto relative">
         <div className="work-wrapper">
           <h1 className="text-pred text-[4rem] font-semibold">My Works</h1>
-          <div className="works grid grid-cols-3 gap-x-8 gap-y-16 mt-12 ">
-            <WorkCard img={tastehood} projectName={"hello"} />
-            <WorkCard img={tastehood} projectName={"hello"} />
-            <WorkCard img={tastehood} projectName={"hello"} />
+          <div className="grid grid-cols-1 mt-12 tablet:grid-cols-2 laptop:grid-cols-3 works gap-x-8 gap-y-16 ">
+            <WorkCard img={tastehood} projectName={"Tastehood"} />
+            <WorkCard img={spotify} projectName={"Spotify"} />
+            <WorkCard img={chatapp} projectName={"ChatApp"} />
             <WorkCard img={tastehood} projectName={"hello"} />
             <WorkCard img={tastehood} projectName={"hello"} />
             <WorkCard img={tastehood} projectName={"hello"} />
@@ -61,7 +63,7 @@ function Work() {
               }}
               value={name}
               placeholder="Name"
-              className="bg-lightergray p-4 text-gray-500 outline-none"
+              className="p-4 text-gray-500 outline-none bg-lightergray"
             />
             <input
               type="email"
@@ -72,7 +74,7 @@ function Work() {
               }}
               value={email}
               placeholder="Email"
-              className="bg-lightergray p-4 text-gray-500 outline-none"
+              className="p-4 text-gray-500 outline-none bg-lightergray"
             />
 
             <input
@@ -84,12 +86,12 @@ function Work() {
               }}
               value={message}
               placeholder="Message"
-              className="bg-lightergray p-4 text-gray-500 outline-none"
+              className="p-4 text-gray-500 outline-none bg-lightergray"
             />
             <div className="flex w-full justify-end text-lightgray text-[1.2rem]">
               <button
                 onClick={handleuser}
-                className="bg-pred p-4 flex gap-4 items-center justify-center font-bold"
+                className="flex items-center justify-center gap-4 p-4 font-bold bg-pred"
               >
                 Stay Connected
                 <FaRegArrowAltCircleRight />
