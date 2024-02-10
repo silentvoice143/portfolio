@@ -36,12 +36,21 @@ function Work() {
         <div className="work-wrapper">
           <h1 className="text-pred text-[4rem] font-semibold">My Works</h1>
           <div className="grid grid-cols-1 mt-12 tablet:grid-cols-2 laptop:grid-cols-3 works gap-x-8 gap-y-16 ">
-            <WorkCard img={tastehood} projectName={"Tastehood"} />
-            <WorkCard img={spotify} projectName={"Spotify"} />
-            <WorkCard img={chatapp} projectName={"ChatApp"} />
-            <WorkCard img={tastehood} projectName={"hello"} />
-            <WorkCard img={tastehood} projectName={"hello"} />
-            <WorkCard img={tastehood} projectName={"hello"} />
+            <WorkCard
+              img={tastehood}
+              projectName={"Tastehood"}
+              link={"https://silentvoice143.github.io/TasteHood/"}
+            />
+            <WorkCard
+              img={spotify}
+              projectName={"Spotify"}
+              link={"https://spotify-khvq.onrender.com"}
+            />
+            <WorkCard
+              img={chatapp}
+              projectName={"ChatApp"}
+              link={"https://chatapp-4nnd.onrender.com/"}
+            />
           </div>
         </div>
       </div>

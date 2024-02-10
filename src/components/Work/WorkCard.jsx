@@ -1,12 +1,12 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-function WorkCard({ img, projectName }) {
+function WorkCard({ img, projectName, link }) {
   const ProjectCard = useRef();
   const [showName, setShowName] = useState(false);
 
   return (
-    <Link>
+    <div>
       <div
         onMouseOver={() => {
           setShowName(true);
@@ -26,13 +26,19 @@ function WorkCard({ img, projectName }) {
         <div
           className={`${
             showName ? "" : "hidden"
-          } absolute duration-200 text-pred bg-black bg-opacity-70 rounded-md top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-1/2 p-4  font-extrabold text-center`}
+          } absolute duration-200 text-white bg-black bg-opacity-70 rounded-md top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-1/2 p-4  font-extrabold text-center`}
         >
           <h1 className="text-3xl">{projectName}</h1>
-          <p className="text-sm hover:underline">click to view</p>
+          <Link
+            target="_blank"
+            to={link}
+            className="text-sm hover:underline hover:text-pred"
+          >
+            <span>click to view</span>
+          </Link>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
 
