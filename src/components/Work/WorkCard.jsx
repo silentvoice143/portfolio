@@ -50,10 +50,10 @@ function WorkCard({ img, projectName, links, detail }) {
         // onMouseOut={() => {
         //   setShowName(false);
         // }}
-        className="relative w-full my-12 work-container "
+        className="relative w-full my-12 work-container"
       >
         <div
-          className="bg-white "
+          className="bg-black max-[800px]:py-4"
           style={{
             boxShadow:
               "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
@@ -66,7 +66,7 @@ function WorkCard({ img, projectName, links, detail }) {
             className={``}
           />
         </div>
-        <div className="flex items-center justify-between p-6 bg-white shortdesp">
+        <div className="flex items-center justify-between p-6 max-[800px]:px-4 max-[800px]:py-2 bg-white shortdesp">
           <h1
             className="font-bold"
             style={{ fontSize: "clamp(1.2rem, 4vw, 3rem)" }}
@@ -77,7 +77,7 @@ function WorkCard({ img, projectName, links, detail }) {
             onClick={() => {
               setShowName(!showName);
             }}
-            className="p-4 rounded-full hover:bg-[#97979754]"
+            className="max-[800px]:p-2 p-4  rounded-full hover:bg-[#97979754]"
           >
             {showName ? (
               <IoMdArrowDropup className="text-[2rem]" />
@@ -89,7 +89,7 @@ function WorkCard({ img, projectName, links, detail }) {
         <div
           className={`${
             showName ? "" : "hidden"
-          }    h-full details px-8 py-4 rounded-bl-md rounded-br-md bg-white mb-4`}
+          }    h-full details px-8 py-4  rounded-bl-md rounded-br-md bg-white mb-4`}
         >
           <h3 className="font-bold text-red-500">Description: </h3>
           <p className="">{detail.description}</p>
@@ -108,24 +108,24 @@ function WorkCard({ img, projectName, links, detail }) {
           </div>
           <ul className="list-disc">
             {links[0] && (
-              <li>
-                Git repo:{" "}
+              <li className="break-words">
+                <p>Git repo: </p>
                 <a className="text-red-500" href={links[0]} target="_blank">
                   {links[0]}
                 </a>
               </li>
             )}
             {links[1] && (
-              <li>
-                Live link:{" "}
-                <a className="text-red-500" href={links[1]} target="_blank">
+              <li className="break-words">
+                <p>Live link: </p>
+                <a className="text-red-500 " href={links[1]} target="_blank">
                   {links[1]}
                 </a>
               </li>
             )}
             {links[2] && (
-              <li>
-                Blog post:{" "}
+              <li className="break-words">
+                <p> Blog post: </p>
                 <a className="text-red-500" href={links[2]} target="_blank">
                   {links[2]}
                 </a>

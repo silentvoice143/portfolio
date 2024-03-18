@@ -96,7 +96,7 @@ function Work() {
   ];
   return (
     <>
-      <div className="work-container py-[6rem] px-[15%] bg-lightgray font-roboto relative">
+      <div className="work-container max-[800px]:px-4 py-[6rem] px-[15%] bg-lightgray font-roboto relative">
         <div className="work-wrapper">
           <h1 className="text-pred text-[4rem] font-semibold">My Works</h1>
           <div className="mt-12 works gap-x-8 gap-y-16">
