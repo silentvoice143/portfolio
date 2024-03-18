@@ -1,13 +1,17 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { IoMdArrowDropup } from "react-icons/io";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { FaLink } from "react-icons/fa";
 
-function WorkCard({ img, projectName, link }) {
+function WorkCard({ img, projectName, links, detail }) {
   const ProjectCard = useRef();
   const [showName, setShowName] = useState(false);
+  // const showName = true;
 
   return (
     <div>
-      <div
+      {/* <div
         onMouseOver={() => {
           setShowName(true);
         }}
@@ -36,6 +40,98 @@ function WorkCard({ img, projectName, link }) {
           >
             <span>click to view</span>
           </Link>
+        </div>
+      </div> */}
+
+      <div
+        // onMouseOver={() => {
+        //   setShowName(true);
+        // }}
+        // onMouseOut={() => {
+        //   setShowName(false);
+        // }}
+        className="relative w-full my-12 work-container "
+      >
+        <div
+          className="bg-white "
+          style={{
+            boxShadow:
+              "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+          }}
+        >
+          <img
+            // style={{ width: "clamp(40rem, 40vw, 50rem)" }}
+            src={img}
+            alt=""
+            className={``}
+          />
+        </div>
+        <div className="flex items-center justify-between p-6 bg-white shortdesp">
+          <h1
+            className="font-bold"
+            style={{ fontSize: "clamp(1.2rem, 4vw, 3rem)" }}
+          >
+            {projectName}
+          </h1>
+          <button
+            onClick={() => {
+              setShowName(!showName);
+            }}
+            className="p-4 rounded-full hover:bg-[#97979754]"
+          >
+            {showName ? (
+              <IoMdArrowDropup className="text-[2rem]" />
+            ) : (
+              <IoMdArrowDropdown className="text-[2rem]" />
+            )}
+          </button>
+        </div>
+        <div
+          className={`${
+            showName ? "" : "hidden"
+          }    h-full details px-8 py-4 rounded-bl-md rounded-br-md bg-white mb-4`}
+        >
+          <h3 className="font-bold text-red-500">Description: </h3>
+          <p className="">{detail.description}</p>
+          <h3 className="mt-4 font-bold text-red-500">Features: </h3>
+          <ul className="list-disc">
+            {detail.feature.map((data, index) => (
+              <li key={index}>{data}</li>
+            ))}
+          </ul>
+
+          <div className="flex gap-2 mt-4 font-bold">
+            <h1 className="">For more detail check these links. </h1>
+            <span>
+              <FaLink className="text-[1.2rem]" />
+            </span>
+          </div>
+          <ul className="list-disc">
+            {links[0] && (
+              <li>
+                Git repo:{" "}
+                <a className="text-red-500" href={links[0]} target="_blank">
+                  {links[0]}
+                </a>
+              </li>
+            )}
+            {links[1] && (
+              <li>
+                Live link:{" "}
+                <a className="text-red-500" href={links[1]} target="_blank">
+                  {links[1]}
+                </a>
+              </li>
+            )}
+            {links[2] && (
+              <li>
+                Blog post:{" "}
+                <a className="text-red-500" href={links[2]} target="_blank">
+                  {links[2]}
+                </a>
+              </li>
+            )}
+          </ul>
         </div>
       </div>
     </div>

@@ -16,6 +16,8 @@ import adduser from "../email";
 import tastehood from "./workimg/main.png";
 import spotify from "./workimg/spotifyy.jpg";
 import chatapp from "./workimg/chatapp.jpg";
+import musicapp from "./images/Screenshot 2024-03-18 225255.png";
+import secretkeeper from "./images/Screenshot 2024-03-18 230346.png";
 
 import WorkCard from "./WorkCard";
 
@@ -30,27 +32,101 @@ function Work() {
     setName("");
     setMessage("");
   }
+
+  const data = [
+    {
+      key: 1,
+      img: spotify,
+      projectName: "Spotify clone",
+      detail: {
+        description: `It is a clone of spotify web music player having all minimum required features. MERN Stack is used to develop this project.
+          In frontend, We are using "Vite + React" and tailwind css for styling.
+          In backend, We are using node.js and mongodb.`,
+        feature: [
+          "Admin signup/login.",
+          "Add new song to database for admin.",
+          "Create Playlist, add song to it, edit playlist details.",
+          "Public and private playlist toggle.",
+          "User Dashboard.",
+          "Play/Pause and track song progress.",
+        ],
+      },
+      links: [
+        "https://github.com/silentvoice143/spotify",
+        "https://spotify-khvq.onrender.com/",
+      ],
+    },
+    {
+      key: 2,
+      img: musicapp,
+      projectName: "Music Player",
+      detail: {
+        description: `Simple music app using npm howler package.
+        Select and play music from list and all music related function.`,
+        feature: [
+          "Play/pause song.",
+          "Play next/prev song.",
+          "Music progress bar and skip music clicking on progress bar.",
+        ],
+      },
+      links: [
+        "https://github.com/silentvoice143/musicApp",
+        "",
+        "https://codethedestiny.blogspot.com/2024/03/music-app-using-react.html",
+      ],
+    },
+    {
+      key: 2,
+      img: secretkeeper,
+      projectName: "Secret Keeper",
+      detail: {
+        description: `It generates QR Code for any text message which you can share and download as png.`,
+        feature: [
+          "Create QR Code for text message.",
+          "Download QR Code as png",
+          "Share QR Code using Web Share API",
+        ],
+      },
+      links: [
+        "https://github.com/silentvoice143/secretkeeper",
+        "https://secretkeeper-jnp5.onrender.com",
+        "https://codethedestiny.blogspot.com/2024/03/build-secretkeeper-app-and-generate-qr.html",
+      ],
+    },
+  ];
   return (
     <>
       <div className="work-container py-[6rem] px-[15%] bg-lightgray font-roboto relative">
         <div className="work-wrapper">
           <h1 className="text-pred text-[4rem] font-semibold">My Works</h1>
-          <div className="grid grid-cols-1 mt-12 tablet:grid-cols-2 laptop:grid-cols-3 works gap-x-8 gap-y-16 ">
+          <div className="mt-12 works gap-x-8 gap-y-16">
+            {data.map((item) => {
+              console.log(item);
+              return (
+                <WorkCard
+                  key={item.key}
+                  img={item.img}
+                  detail={item.detail}
+                  projectName={item.projectName}
+                  links={item.links}
+                />
+              );
+            })}
+            {/* <WorkCard
+              img={tastehood}
+              projectName={"Tastehood"}
+              link={"https://silentvoice143.github.io/TasteHood/"}
+            />
             <WorkCard
               img={tastehood}
               projectName={"Tastehood"}
               link={"https://silentvoice143.github.io/TasteHood/"}
             />
             <WorkCard
-              img={spotify}
-              projectName={"Spotify"}
-              link={"https://spotify-khvq.onrender.com"}
-            />
-            <WorkCard
-              img={chatapp}
-              projectName={"ChatApp"}
-              link={"https://chatapp-4nnd.onrender.com/"}
-            />
+              img={tastehood}
+              projectName={"Tastehood"}
+              link={"https://silentvoice143.github.io/TasteHood/"}
+            /> */}
           </div>
         </div>
       </div>
