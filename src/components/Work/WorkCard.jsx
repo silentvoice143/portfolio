@@ -68,7 +68,7 @@ function WorkCard({ img, projectName, links, detail }) {
         </div>
         <div className="flex items-center justify-between p-6 max-[800px]:px-4 max-[800px]:py-2 bg-white shortdesp">
           <h1
-            className="font-bold"
+            className="font-bold text-[#1e2125]"
             style={{ fontSize: "clamp(1.2rem, 4vw, 3rem)" }}
           >
             {projectName}
@@ -87,13 +87,12 @@ function WorkCard({ img, projectName, links, detail }) {
           </button>
         </div>
         <div
-          className={`${
-            showName ? "" : "hidden"
-          }    h-full details px-8 py-4  rounded-bl-md rounded-br-md bg-white mb-4`}
+          className={`${showName ? "" : "hidden"
+            }    h-full details px-8 py-4  rounded-bl-md rounded-br-md bg-white mb-4`}
         >
-          <h3 className="font-bold text-red-500">Description: </h3>
+          <h3 className="font-bold text-[#ff014f]">Description: </h3>
           <p className="">{detail.description}</p>
-          <h3 className="mt-4 font-bold text-red-500">Features: </h3>
+          <h3 className="mt-4 font-bold text-[#ff014f]">Features: </h3>
           <ul className="list-disc">
             {detail.feature.map((data, index) => (
               <li key={index}>{data}</li>
@@ -101,7 +100,7 @@ function WorkCard({ img, projectName, links, detail }) {
           </ul>
 
           <div className="flex gap-2 mt-4 font-bold">
-            <h1 className="">For more detail check these links. </h1>
+            <h1 className="text-[#1e2125]">For more detail check these links. </h1>
             <span>
               <FaLink className="text-[1.2rem]" />
             </span>
@@ -109,16 +108,16 @@ function WorkCard({ img, projectName, links, detail }) {
           <ul className="list-disc">
             {links[0] && (
               <li className="break-words">
-                <p>Git repo: </p>
-                <a className="text-red-500" href={links[0]} target="_blank">
+                <p className="text-[#1e2125]">Git repo: </p>
+                <a className="text-[#ff014f]" href={links[0]} target="_blank">
                   {links[0]}
                 </a>
               </li>
             )}
             {links[1] && (
               <li className="break-words">
-                <p>Live link: </p>
-                <a className="text-red-500 " href={links[1]} target="_blank">
+                <p className="text-[#1e2125]">Live link: </p>
+                <a className="text-[#ff014f] " href={links[1]} target="_blank">
                   {links[1]}
                 </a>
               </li>

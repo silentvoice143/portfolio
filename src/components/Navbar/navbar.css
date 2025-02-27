@@ -1,14 +1,36 @@
+:root {
+  --heading-text: #1e2125;
+  --text-color: #3c3e41;
+  --secoundery-text: #ff014f;
+}
+
+header {
+  border-bottom: 1px solid var(--heading-text);
+}
+
 .list-item::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
   height: 2px;
-  background-color: #ff4a57;
-  transition: 1s;
+  background-color: #ff014f;
+  transition: .3s all;
 }
 
 .list-item:hover::after {
   width: 100%;
 }
+
+
+
+
+@media screen and (max-width: 1366px) {
+  .nav {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 765px) {}

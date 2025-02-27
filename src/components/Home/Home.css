@@ -1,0 +1,18 @@
+root {
+    --heading-text: #1e2125;
+    --text-color: #3c3e41;
+    --secoundery-text: #ff014f;
+    --bg-secound: #ecf0f3;
+}
+
+.copyright {
+    border-top: 1px solid var(--heading-text);
+}
+
+.home-section {
+    background: url(https://youtu.be/mOFoh9FUR8w);
+}
+
+.service-card {
+    transition: .4s all !important;
+}

@@ -41,93 +41,102 @@ function Skill() {
   }
   return (
     <div className="skills-container">
-      <div className="skill-intro py-[6rem] px-[15%] bg-lightgray font-roboto relative text-gray-500">
+      <div className="skill-intro py-[6rem] px-[15%] bg-[#ecf0f3]  relative text-[#3c3e41]">
         <h1 className="text-[10vw] max-[700px]:text-[14vw]">
-          Talk is <span className="text-pred">Cheap.</span>
+          Talk is <span className="text-[#ff014f]">Cheap.</span>
         </h1>
         <h1 className="text-[8vw] max-[700px]:text-[10vw]">
-          Show me the <span className="text-pred underline">code.</span>
+          Show me the <span className="text-[#ff014f] underline">code.</span>
         </h1>
       </div>
       {/* skill sets */}
 
       <div
-        className="skill-container py-[6rem] px-[15%] bg-darkgray font-roboto relative text-white"
+        className="skill-container py-[6rem] px-[15%]  bg-[#ecf0f3] relative text-white"
         id="Skills"
       >
         <div className="skill-set">
-          <h2 className="font-bold text-pred mb-6 text-[3.5rem]">
-            <span className="underline">Skill</span>-Set
+          <h2 className="font-bold text-[#ff014f] mb-6 text-[3.5rem]">
+            <span className="">Skill</span>-Set
           </h2>
-          <div className="skill-box grid grid-cols-2  child:bg-lightergray child:p-6 child:w-[200px] child:h-[200px] gap-[3rem] min-[990px]:grid-cols-3 max-[770px]:pr-0 max-[600px]:grid-cols-1 child:m-auto">
-            <div className="skill-item hover:scale-[1.1]">
-              <BsGlobe2 className="text-[2.5rem] text-pred mb-2" />
-              <p className="font-bold mb-2">Front-End</p>
-              <ul className="text-[0.9rem] text-gray-500 list-disc">
+          <div className="skill-box grid grid-cols-2  child:bg-transparent child:outline-2 child:outline-double child:outline-[#3c3e41] child:p-6 child:w-[200px] child:h-[200px] gap-[3rem] min-[990px]:grid-cols-3 max-[770px]:pr-0 max-[600px]:grid-cols-1 child:m-auto">
+            <div className="skill-item hover:outline-[#ff014f] duration-200" data-aos="fade-up"
+     data-aos-duration="1000">
+              <BsGlobe2 className="text-[2.5rem] text-[#ff014f] mb-2" />
+              <p className="font-bold mb-2 text-[#1e2125]">Front-End</p>
+              <ul className="text-[0.9rem] text-[#3c3e41] list-disc">
                 <li>Html, Css, JS, JQuery</li>
                 <li>React.js</li>
                 <li>Tailwind Css, Bootstrap</li>
               </ul>
             </div>
-            <div className="skill-item hover:scale-[1.1]">
-              <FaNodeJs className="text-[2.5rem] text-pred mb-2" />
-              <p className="font-bold mb-2">Back-End</p>
-              <ul className="text-[0.9rem] text-gray-500 list-disc">
+            <div className="skill-item hover:outline-[#ff014f] duration-200" data-aos="fade-up"
+     data-aos-duration="1000">
+              <FaNodeJs className="text-[2.5rem] text-[#ff014f] mb-2" />
+              <p className="font-bold mb-2 text-[#1e2125]">Back-End</p>
+              <ul className="text-[0.9rem] text-[#3c3e41] list-disc">
                 <li>Node.js</li>
                 <li>Express</li>
               </ul>
             </div>
-            <div className="skill-item hover:scale-[1.1]">
-              <FaGithub className="text-[2.5rem] text-pred mb-2" />
-              <p className="font-bold mb-2">Git Version Control</p>
-              <ul className="text-[0.9rem] text-gray-500 list-disc">
+            <div className="skill-item hover:outline-[#ff014f] duration-200" data-aos="fade-up"
+     data-aos-duration="1000">
+              <FaGithub className="text-[2.5rem] text-[#ff014f] mb-2" />
+              <p className="font-bold mb-2 text-[#1e2125] ">Git Version Control</p>
+              <ul className="text-[0.9rem] text-[#3c3e41] list-disc">
                 <li>version control using cmd and VS Code</li>
               </ul>
             </div>
-            <div className="skill-item hover:scale-[1.1]">
-              <BsDatabaseFillCheck className="text-[2.5rem] text-pred mb-2" />
-              <p className="font-bold mb-2">Database</p>
-              <ul className="text-[0.9rem] text-gray-500 list-disc">
+            <div className="skill-item hover:outline-[#ff014f] duration-200" data-aos="fade-up"
+     data-aos-duration="1000">
+              <BsDatabaseFillCheck className="text-[2.5rem] text-[#ff014f] mb-2" />
+              <p className="font-bold mb-2 text-[#1e2125]">Database</p>
+              <ul className="text-[0.9rem] text-[#3c3e41] list-disc">
                 <li>MongoDb</li>
                 <li>SQL</li>
               </ul>
             </div>
-            <div className="skill-item hover:scale-[1.1]">
-              <FaFileCode className="text-[2.5rem] text-pred mb-2" />
-              <p className="font-bold mb-2">Programming Languages</p>
-              <ul className="text-[0.9rem] text-gray-500 list-disc">
+            <div className="skill-item hover:outline-[#ff014f] duration-200" data-aos="fade-up"
+     data-aos-duration="1000">
+              <FaFileCode className="text-[2.5rem] text-[#ff014f] mb-2" />
+              <p className="font-bold mb-2 text-[#1e2125]">Programming Languages</p>
+              <ul className="text-[0.9rem] text-[#3c3e41] list-disc">
                 <li>C, C++, Typescript</li>
                 <li>Java, Python(basic)</li>
               </ul>
             </div>
-            <div className="skill-item hover:scale-[1.1]">
-              <FaSitemap className="text-[2.5rem] text-pred mb-2" />
-              <p className="font-bold mb-2">DSA</p>
-              <ul className="text-[0.9rem] text-gray-500 list-disc">
+            <div className="skill-item hover:outline-[#ff014f] duration-200" data-aos="fade-up"
+     data-aos-duration="1000">
+              <FaSitemap className="text-[2.5rem] text-[#ff014f] mb-2" />
+              <p className="font-bold mb-2 text-[#1e2125]">DSA</p>
+              <ul className="text-[0.9rem] text-[#3c3e41] list-disc">
                 <li>Sorting, Searching Recursive</li>
                 <li>Greedy, Dynamic and BITs etc</li>
               </ul>
             </div>
-            <div className="skill-item hover:scale-[1.1]">
-              <FaPerson className="text-[2.5rem] text-pred mb-2" />
-              <p className="font-bold mb-2">Leadership</p>
-              <ul className="text-[0.9rem] text-gray-500 list-disc">
+            <div className="skill-item hover:outline-[#ff014f] duration-200" data-aos="fade-up"
+     data-aos-duration="1000">
+              <FaPerson className="text-[2.5rem] text-[#ff014f] mb-2" />
+              <p className="font-bold mb-2 text-[#1e2125]">Leadership</p>
+              <ul className="text-[0.9rem] text-[#3c3e41] list-disc">
                 <li>Project leader at Baoiam Pvt Limited</li>
                 <li>Valuable Experience</li>
               </ul>
             </div>
-            <div className="skill-item hover:scale-[1.1]">
-              <MdOutlineManageAccounts className="text-[2.5rem] text-pred mb-2" />
-              <p className="font-bold mb-2">Project Management</p>
-              <ul className="text-[0.9rem] text-gray-500 list-disc">
+            <div className="skill-item hover:outline-[#ff014f] duration-200" data-aos="fade-up"
+     data-aos-duration="1000">
+              <MdOutlineManageAccounts className="text-[2.5rem] text-[#ff014f] mb-2" />
+              <p className="font-bold mb-2 text-[#1e2125]">Project Management</p>
+              <ul className="text-[0.9rem] text-[#3c3e41] list-disc">
                 <li>Managed Baoiam project with team</li>
                 <li>Completed Frontend</li>
               </ul>
             </div>
-            <div className="skill-item hover:scale-[1.1]">
-              <RiSpeakFill className="text-[2.5rem] text-pred mb-2" />
-              <p className="font-bold mb-2">Communication</p>
-              <ul className="text-[0.9rem] text-gray-500 list-disc">
+            <div className="skill-item hover:outline-[#ff014f] duration-200" data-aos="fade-up"
+     data-aos-duration="1000">
+              <RiSpeakFill className="text-[2.5rem] text-[#ff014f] mb-2" />
+              <p className="font-bold mb-2 text-[#1e2125]">Communication</p>
+              <ul className="text-[0.9rem] text-[#3c3e41] list-disc">
                 <li>Verbal and Written</li>
                 <li>HIndi and English</li>
               </ul>
@@ -135,12 +144,12 @@ function Skill() {
           </div>
         </div>
       </div>
-      <div className="cooding-platforms skill-container py-[6rem] px-[15%] bg-darkgray font-roboto relative text-white">
-        <h1 className="text-pred text-[4rem] font-semibold">Coding Profiles</h1>
+      <div className="cooding-platforms skill-container py-[6rem] px-[15%] bg-[#ecf0f3]  relative text-white">
+        <h1 className="text-[#ff014f] text-[4rem] font-semibold">Coding Profiles</h1>
         <div>
           <div className="leetcode mb-[5rem]">
             <a href="https://leetcode.com/silent_voice143/">
-              <h1 className="text-[2rem] font-semibold my-8 underline">
+              <h1 className="text-[2rem] font-semibold my-8 underline text-[#3c3e41]">
                 Leetcode
               </h1>
             </a>
@@ -159,7 +168,7 @@ function Skill() {
           </div>
           <div className="codingninjs">
             <a href="https://www.codingninjas.com/studio/profile/b98b17bb-c9e8-4c90-b732-437e9c265b2f">
-              <h1 className="text-[2rem] font-semibold my-8 underline">
+              <h1 className="text-[2rem] font-semibold my-8 underline text-[#3c3e41]">
                 Coding Ninjas
               </h1>
             </a>
@@ -225,11 +234,11 @@ function Skill() {
         </div>
       </div>
       <div
-        className="contact-section py-[6rem] px-[15%] bg-lightgray font-roboto relative"
+        className="contact-section py-[6rem] px-[15%] bg-[#ecf0f3]  relative"
         id="Contact"
       >
         <div className="connect-box w-[40vw] max-[770px]:w-[70vw] flex flex-col gap-4">
-          <h1 className="text-pred text-[4rem] font-semibold">
+          <h1 className="text-[#ff014f] text-[4rem] font-semibold">
             Connect with me
           </h1>
           <input
@@ -241,7 +250,7 @@ function Skill() {
             }}
             value={name}
             placeholder="Name"
-            className="bg-lightergray p-4 text-gray-500 outline-none"
+            className="outline-2 outline-double outline-[#1e2125] p-4 text-[#3c3e41] outline-none bg-transparent"
           />
           <input
             type="email"
@@ -252,7 +261,7 @@ function Skill() {
             }}
             value={email}
             placeholder="Email"
-            className="bg-lightergray p-4 text-gray-500 outline-none"
+            className="outline-2 outline-double outline-[#1e2125] p-4 text-[#3c3e41] outline-none bg-transparent"
           />
 
           <input
@@ -264,12 +273,12 @@ function Skill() {
             }}
             value={message}
             placeholder="Message"
-            className="bg-lightergray p-4 text-gray-500 outline-none"
+            className="outline-2 outline-double outline-[#1e2125] p-4 text-[#3c3e41] outline-none bg-transparent"
           />
           <div className="flex w-full justify-end text-lightgray text-[1.2rem]">
             <button
               onClick={handleuser}
-              className="bg-pred p-4 flex gap-4 items-center justify-center font-bold"
+              className="outline-2 outline-dashed p-4 flex gap-4 mt-2 items-center justify-center font-bold hover:px-6 duration-300 hover:outline-[#ff014f]"
             >
               Stay Connected
               <FaRegArrowAltCircleRight />
@@ -277,12 +286,12 @@ function Skill() {
           </div>
         </div>
         <div className="line absolute w-[2px] bg-gray-400 top-[30%] right-[20%] h-[250px] max-[770px]:hidden">
-          <div className="circle1 w-8 h-8 border-2 border-pred bg-lightgray rounded-full absolute top-0 right-[-14.8px] z-2"></div>
-          <div className="circle2 w-8 h-8 border-2 border-pred bg-lightgray  rounded-full absolute top-[43%] right-[-14.8px]"></div>
-          <div className="circle3 w-8 h-8 border-2 border-pred  bg-pred rounded-full absolute bottom-0 right-[-14.8px]"></div>
+          <div className="circle1 w-8 h-8 border-2 border-[#ff014f] bg-[#1e2125] rounded-full absolute top-0 right-[-14.8px] z-2"></div>
+          <div className="circle2 w-8 h-8 border-2 border-[#ff014f] bg-[#1e2125]  rounded-full absolute top-[43%] right-[-14.8px]"></div>
+          <div className="circle3 w-8 h-8 border-2 border-[#1e2125]  bg-[#ff014f] rounded-full absolute bottom-0 right-[-14.8px]"></div>
         </div>
       </div>
-      <div className="copyright bg-black h-[3rem] flex justify-center items-center text-white">
+      <div className="copyright bg-[#ecf0f3] h-[5rem] flex justify-center items-center text-[#1e2125]">
         <p>&copy; Satyam | Developer | Programming Hunter 2023</p>
       </div>
     </div>

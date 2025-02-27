@@ -13,37 +13,37 @@ function Navbar() {
   };
 
   return (
-    <header className="md:h-[5rem] bg-darkgray text-white flex flex-col md:block relative z-[100]">
-      <nav className="flex flex-row justify-between items-center text-[1.2rem] w-[92%] m-auto">
+    <header className="md:h-[8vh] flex flex-col md:block relative z-[100] bg-[#ecf0f3]">
+      <nav className="flex flex-row justify-between items-center text-[1.2rem] w-[80%] m-auto nav">
         <Link to="/">
           <div className="brand">
-            <h1 className="text-[3rem] font-paci">
-              Sat<span className="text-pred">y</span>am
+            <h1 className="text-[3rem] font-semibold text-[#1e2125]  head-name">
+              Sat<span className="text-[#ff014f]">y</span>am
             </h1>
           </div>
         </Link>
-        <ul className="hidden nav-list md:flex md:gap-4 max-[882px]:text-[1rem] lg:gap-8 child:relative child:hover:cursor-pointer">
+        <ul className="hidden nav-list md:flex md:gap-4 max-[882px]:text-[1rem] lg:gap-6 child:relative child:hover:cursor-pointer">
           <Link to="/" className="p-2">
-            <li className="list-item">Home</li>
+            <li className="text-base font-medium text-[#3c3e41] list-item">HOME</li>
           </Link>
           <Link to="/service" className="p-2">
-            <li className="list-item">Services</li>
+            <li className="text-base font-medium text-[#3c3e41] list-item">SERVICES</li>
           </Link>
           <Link to="/about" className="p-2">
-            <li className="list-item">About</li>
+            <li className="text-base font-medium text-[#3c3e41] list-item">ABOUT</li>
           </Link>
           <Link to="/skills" className="p-2">
-            <li className="list-item">Skills</li>
+            <li className="text-base font-medium text-[#3c3e41] list-item">SKILLS</li>
           </Link>
           <Link to="/work" className="p-2">
-            <li className="list-item">Works</li>
+            <li className="text-base font-medium text-[#3c3e41] list-item">WORKS</li>
           </Link>
           <Link to="/contact" className="p-2">
-            <li className="list-item">Contact</li>
+            <li className="text-base font-medium text-[#3c3e41] list-item">CONTACT</li>
           </Link>
         </ul>
         <div>
-          <div className="nav-icons hidden md:inline-block border-2  px-4 py-2 rounded-full hover:border-pred  max-[882px]:border-0 mr-4 max-[882px]:mr-0 max-[882px]:px-2">
+          <div className="nav-icons hidden md:inline-block border-2  px-4 py-2 rounded-full hover:border-[#ff014f] duration-200  max-[882px]:border-0 mr-4 max-[882px]:mr-0 max-[882px]:px-2">
             <Link
               to="https://github.com/silentvoice143"
               target="_blank"
@@ -52,7 +52,7 @@ function Navbar() {
               <FaGithub />
             </Link>
           </div>
-          <div className="nav-icons hidden md:inline-block border-2 px-4 py-2 rounded-full hover:border-pred max-[882px]:border-0 max-[882px]:px-2">
+          <div className="nav-icons hidden md:inline-block border-2 px-4 py-2 rounded-full hover:border-[#ff014f] duration-200 max-[882px]:border-0 max-[882px]:px-2">
             <Link
               to="https://www.linkedin.com/in/satyam-kumar-550b4025a/"
               target="_blank"
@@ -63,40 +63,40 @@ function Navbar() {
           </div>
         </div>
 
-        <button className="md:hidden" onClick={toggle}>
+        <button className="md:hidden hambar" onClick={toggle}>
           {isOpen ? (
-            <IoMdClose className="md:hidden text-[2rem]" />
+            <IoMdClose className="md:hidden text-[2rem] text-[#1e2125]" />
           ) : (
-            <IoIosMenu className="md:hidden text-[2rem]" />
+            <IoIosMenu className="md:hidden text-[2rem] text-[#1e2125]" />
           )}
         </button>
       </nav>
-      <div
-        className={isOpen ? "px-8 block duration-200 ease-linear" : "hidden"}
+      <div id="nav-links"
+        className={isOpen ? "px-8 block duration-400 ease" : "hidden"}
       >
         <ul className="w-full flex flex-col nav-list md:hidden md:gap-4 lg:gap-8 child:relative">
-          <Link to="/" className="p-2 pl-0">
-            <li className="border-b-2 border-lightergray">Home</li>
+          <Link to="/" className="p-5 pl-0">
+            <li className="border-b-2 border-[#ff014f] pb-2">Home</li>
           </Link>
-          <Link to="/service" className="p-2 pl-0">
-            <li className="border-b-2 border-lightergray">Services</li>
+          <Link to="/service" className="p-5 pl-0">
+            <li className="border-b-2 border-[#ff014f] pb-2">Services</li>
           </Link>
-          <Link to="/about" className="p-2 pl-0">
-            <li className="border-b-2 border-lightergray">About</li>
+          <Link to="/about" className="p-5 pl-0">
+            <li className="border-b-2 border-[#ff014f] pb-2">About</li>
           </Link>
-          <Link to="/skills" className="p-2 pl-0">
-            <li className="border-b-2 border-lightergray">Skills</li>
+          <Link to="/skills" className="p-5 pl-0">
+            <li className="border-b-2 border-[#ff014f] pb-2">Skills</li>
           </Link>
-          <Link to="/work" className="p-2 pl-0">
-            <li className="border-b-2 border-lightergray">Works</li>
+          <Link to="/work" className="p-5 pl-0">
+            <li className="border-b-2 border-[#ff014f] pb-2">Works</li>
           </Link>
-          <Link to="/contact" className="p-2 pl-0">
-            <li className="border-b-2 border-lightergray">Contact</li>
+          <Link to="/contact" className="p-5 pl-0">
+            <li className="border-b-2 border-[#ff014f] pb-2">Contact</li>
           </Link>
         </ul>
         <br />
-        <div className="md:hidden mb-8 mt-4">
-          <div className="nav-icons px-4 py-2 inline-block rounded-full border-[2px] border-white mr-4">
+        <div className="md:hidden mb-5 mt-4">
+          <div className="nav-icons px-4 py-2 inline-block rounded-full border-[2px] border-[#ff014f] mr-4">
             <Link
               to="https://github.com/silentvoice143"
               target="_blank"
@@ -105,7 +105,7 @@ function Navbar() {
               <FaGithub className="w-6 h-6" />
             </Link>
           </div>
-          <div className="nav-icons inline-block  px-4 py-2 rounded-full border-[2px] border-white">
+          <div className="nav-icons inline-block  px-4 py-2 rounded-full border-[2px] border-[#ff014f]">
             <Link
               to="https://www.linkedin.com/in/satyam-kumar-550b4025a/"
               target="_blank"

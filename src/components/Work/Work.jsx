@@ -9,7 +9,7 @@ import {
   FaGithub,
   FaNodeJs,
 } from "react-icons/fa";
-import {} from "react-icons/fa6";
+import { } from "react-icons/fa6";
 import { MdOutlineManageAccounts } from "react-icons/md";
 import { RiSpeakFill } from "react-icons/ri";
 import adduser from "../email";
@@ -94,12 +94,13 @@ function Work() {
       ],
     },
   ];
+
   return (
     <>
-      <div className="work-container max-[800px]:px-4 py-[6rem] px-[15%] bg-lightgray font-roboto relative">
+      <div className="work-container max-[800px]:px-4 py-[6rem] px-[15%] bg-[#ecf0f3] relative">
         <div className="work-wrapper">
-          <h1 className="text-pred text-[4rem] font-semibold">My Works</h1>
-          <div className="mt-12 works gap-x-8 gap-y-16">
+          <h1 className="text-[#ff014f] text-[4rem] font-semibold">My Works</h1>
+          <div className="mt-12 works gap-x-8 gap-y-16" >
             {data.map((item) => {
               console.log(item);
               return (
@@ -132,12 +133,12 @@ function Work() {
       </div>
       <div className="contact-container">
         <div
-          className="contact-section py-[6rem] px-[15%] bg-lightgray font-roboto relative"
+          className="contact-section py-[6rem] px-[15%] bg-[#ecf0f3]  relative"
           id="Contact"
         >
           <div className="connect-box w-[40vw] max-[770px]:w-[70vw] flex flex-col gap-4">
-            <h1 className="text-pred text-[4rem] font-semibold">
-              Connect with me
+            <h1 className="text-[#ff014f] text-[4rem] font-semibold">
+              Connect With Me
             </h1>
             <input
               type="text"
@@ -148,7 +149,7 @@ function Work() {
               }}
               value={name}
               placeholder="Name"
-              className="p-4 text-gray-500 outline-none bg-lightergray"
+              className="outline-2 outline-double outline-[#1e2125] p-4 text-[#3c3e41] outline-none bg-transparent"
             />
             <input
               type="email"
@@ -159,7 +160,7 @@ function Work() {
               }}
               value={email}
               placeholder="Email"
-              className="p-4 text-gray-500 outline-none bg-lightergray"
+              className="outline-2 outline-double outline-[#1e2125] p-4 text-[#3c3e41] outline-none bg-transparent"
             />
 
             <input
@@ -171,12 +172,12 @@ function Work() {
               }}
               value={message}
               placeholder="Message"
-              className="p-4 text-gray-500 outline-none bg-lightergray"
+              className="outline-2 outline-double outline-[#1e2125] p-4 text-[#3c3e41] outline-none bg-transparent"
             />
             <div className="flex w-full justify-end text-lightgray text-[1.2rem]">
               <button
                 onClick={handleuser}
-                className="flex items-center justify-center gap-4 p-4 font-bold bg-pred"
+                className="outline-2 outline-dashed p-4 flex gap-4 mt-2 items-center justify-center font-bold hover:px-6 duration-300 hover:outline-[#ff014f]"
               >
                 Stay Connected
                 <FaRegArrowAltCircleRight />
@@ -185,12 +186,12 @@ function Work() {
           </div>
 
           <div className="line absolute w-[2px] bg-gray-400 top-[30%] right-[20%] h-[250px] max-[770px]:hidden">
-            <div className="circle1 w-8 h-8 border-2 border-pred bg-lightgray rounded-full absolute top-0 right-[-14.8px] z-2"></div>
-            <div className="circle2 w-8 h-8 border-2 border-pred bg-lightgray  rounded-full absolute top-[43%] right-[-14.8px]"></div>
-            <div className="circle3 w-8 h-8 border-2 border-pred  bg-pred rounded-full absolute bottom-0 right-[-14.8px]"></div>
+            <div className="circle1 w-8 h-8 border-2 border-[#ff014f] bg-[#1e2125] rounded-full absolute top-0 right-[-14.8px] z-2"></div>
+            <div className="circle2 w-8 h-8 border-2 border-[#ff014f] bg-[#1e2125]  rounded-full absolute top-[43%] right-[-14.8px]"></div>
+            <div className="circle3 w-8 h-8 border-2 border-[#1e2125]  bg-[#ff014f] rounded-full absolute bottom-0 right-[-14.8px]"></div>
           </div>
         </div>
-        <div className="copyright bg-black h-[3rem] flex justify-center items-center text-white">
+        <div className="copyright bg-[#ecf0f3] h-[5rem] flex justify-center items-center text-[#1e2125]">
           <p>&copy; Satyam | Developer | Programming Hunter 2023</p>
         </div>
       </div>
