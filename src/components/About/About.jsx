@@ -18,6 +18,7 @@ import adduser from "../email";
 
 import bharatinternlogo from "./companylogo/bharatintern.jpeg";
 import baoiamlogo from "./companylogo/baoiam.jpeg";
+import atticbitslogo from "./companylogo/atticbits.jpg"
 
 function About() {
   const [email, setEmail] = useState("");
@@ -96,6 +97,111 @@ function About() {
           <span className="mr-2">Talk!</span> About Experience
         </h1>
         <div className="internship flex flex-col gap-20">
+          <div className="bharatintern">
+            <div className="flex gap-4 mb-8">
+              <img
+                className="w-12 h-12 rounded-lg"
+                src={atticbitslogo}
+                alt=""
+                srcset=""
+              />
+              <h1 className="font-semibold mt-auto text-[1.6rem]  text-[#3c3e41]">
+                Atticbits Private Limited
+              </h1>
+            </div>
+            <div className="pl-20">
+              <h1 className="text-[1.2rem] text-[#ff014f] font-bold">Role:</h1>
+              <p className="font-bold text-sm mb-12 text-[#3c3e41]">Software developer</p>
+              <h1 className="text-[1.2rem] text-[#ff014f] font-bold">
+                Worked On Projects:
+              </h1>
+              <div>
+                <h1 className="font-semibold text-[1.6rem] mt-4 text-[#1e2125]">Wavework</h1>
+                <ul className="text-[#1e2125] list-disc child:my-8">
+                  <li>
+                    <span className=" text-[#ff014f] font-semibold">
+                      Description:{" "}
+                    </span>
+                    <p>
+                      An android application for a company used for internal operation management and device management.
+                    </p>
+                  </li>
+                  <li>
+                    <span className=" text-[#ff014f] font-semibold">
+                      Technology learned:{" "}
+                    </span>
+                    <ul className="list-inside list-decimal child:mb-2">
+                      <li>ReactJS, React-NAtive, Redux: Frontend development</li>
+                      <li>Node.js : Backend development</li>
+                      <li>MongoDB : Database</li>
+                      <li>JWT token for user authentication</li>
+                      <li>ReactHooks for state management.</li>
+                    </ul>
+                  </li>
+                </ul>
+                
+              </div>
+              <div>
+                <h1 className="font-semibold text-[1.6rem] mt-[3rem] text-[#1e2125]">
+                  Hiry
+                </h1>
+                <ul className="text-[#1e2125] list-disc child:my-8">
+                  <li>
+                    <span className=" text-[#ff014f] font-semibold">
+                      Description:{" "}
+                    </span>
+                    <p>
+                      A job posting platfor and job finding platform.
+                    </p>
+                  </li>
+                  <li>
+                    <span className=" text-[#ff014f] font-semibold">
+                      Technology learned:{" "}
+                    </span>
+                    <ul className="list-inside list-decimal child:mb-2">
+                      <li>ReactJs, ReactHooks, Redux, NextJs, TailwindCss: Frontend development</li>
+                      <li>ReactHooks for state management.</li>
+                    </ul>
+                  </li>
+                </ul>
+                <Link
+                  to="https://hiry.com/"
+                  target="_blank"
+                  className="px-4 py-2 border-2 border-[#ff014f] rounded-full inline-flex gap-2 text-[#1e2125] items-center hover:px-5 duration-200"
+                >
+                  <p>Hiry website</p>
+                  <FaExternalLinkAlt />
+                </Link>
+              </div>
+              <div>
+                <h1 className="font-semibold text-[1.6rem] mt-[3rem] text-[#1e2125]">
+                  Athena
+                </h1>
+                <ul className="text-[#1e2125] list-disc child:my-8">
+                  <li>
+                    <span className=" text-[#ff014f] font-semibold">
+                      Description:{" "}
+                    </span>
+                    <p>
+                     Athena is a data visualization project that dynamically creates a network graph based on real-time suggestions from the Google search engine. Upon entering a keyword, the app fetches relevant suggestions and visualizes them as interconnected nodes, offering an intuitive way to explore related search trends and topics.
+                    </p>
+                  </li>
+                  <li>
+                    <span className=" text-[#ff014f] font-semibold">
+                      Technology learned:{" "}
+                    </span>
+                    <ul className="list-inside list-decimal child:mb-2">
+                      <li>Developed the network graph using d3 library</li>
+                      <li>Optimized for responsiveness and scalability across various datasets</li>
+                      <li>Designed intuitive UI for user input and real-time updates</li>
+                      <li>ReactHooks for state management.</li>
+                    </ul>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
           <div className="bharatintern">
             <div className="flex gap-4 mb-8">
               <img

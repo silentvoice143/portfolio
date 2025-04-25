@@ -5,8 +5,12 @@ import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function Navbar() {
+  const location = useLocation();
+  const pathName=location.pathname;
+  console.log(pathName)
   const [isOpen, setIsOpen] = React.useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -23,23 +27,23 @@ function Navbar() {
           </div>
         </Link>
         <ul className="hidden nav-list md:flex md:gap-4 max-[882px]:text-[1rem] lg:gap-6 child:relative child:hover:cursor-pointer">
-          <Link to="/" className="p-2">
-            <li className="text-base font-medium text-[#3c3e41] list-item">HOME</li>
+          <Link to="/" className={`p-2`}>
+            <li className={`text-base font-medium text-[#3c3e41] list-item ${pathName==="/"?"active":""}`}>HOME</li>
           </Link>
           <Link to="/service" className="p-2">
-            <li className="text-base font-medium text-[#3c3e41] list-item">SERVICES</li>
+            <li className={`text-base font-medium text-[#3c3e41] list-item ${pathName==="/service"?"active":""}`}>SERVICES</li>
           </Link>
           <Link to="/about" className="p-2">
-            <li className="text-base font-medium text-[#3c3e41] list-item">ABOUT</li>
+            <li className={`text-base font-medium text-[#3c3e41] list-item ${pathName==="/about"?"active":""}`}>ABOUT</li>
           </Link>
           <Link to="/skills" className="p-2">
-            <li className="text-base font-medium text-[#3c3e41] list-item">SKILLS</li>
+            <li className={`text-base font-medium text-[#3c3e41] list-item ${pathName==="/skills"?"active":""}`}>SKILLS</li>
           </Link>
           <Link to="/work" className="p-2">
-            <li className="text-base font-medium text-[#3c3e41] list-item">WORKS</li>
+            <li className={`text-base font-medium text-[#3c3e41] list-item ${pathName==="/work"?"active":""}`}>WORKS</li>
           </Link>
           <Link to="/contact" className="p-2">
-            <li className="text-base font-medium text-[#3c3e41] list-item">CONTACT</li>
+            <li className={`text-base font-medium text-[#3c3e41] list-item ${pathName==="/contact"?"active":""}`}>CONTACT</li>
           </Link>
         </ul>
         <div>

@@ -20,7 +20,8 @@ header {
   transition: .3s all;
 }
 
-.list-item:hover::after {
+.list-item:hover::after,
+.list-item.active::after {
   width: 100%;
 }
 
